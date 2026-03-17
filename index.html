@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protocolo 180 Minutos - Prof. Daniel Garófalo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary: #051937; --accent: #ffcc00; --secondary: #00875a; --text: #333; --light: #f9f9f9; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Montserrat', sans-serif; color: var(--text); line-height: 1.5; }
+        .container { width: 90%; max-width: 1000px; margin: 0 auto; padding: 20px 0; }
+        
+        /* Top Bar */
+        .top-bar { background: #e31e24; color: white; text-align: center; padding: 10px; font-weight: bold; font-size: 0.9rem; }
+
+        /* Hero Section */
+        header { background: var(--primary); color: white; padding: 40px 0; text-align: center; }
+        .hero-grid { display: flex; flex-direction: column; align-items: center; gap: 20px; }
+        .photo-placeholder { width: 180px; height: 180px; border-radius: 50%; border: 4px solid var(--accent); background: #ccc; overflow: hidden; }
+        .photo-placeholder img { width: 100%; height: 100%; object-fit: cover; }
+        h1 { font-size: 1.8rem; font-weight: 900; line-height: 1.2; }
+        h1 span { color: var(--accent); }
+        .sub { font-size: 1rem; opacity: 0.9; margin: 15px 0; }
+
+        /* Pillars Section */
+        .pillars { padding: 50px 0; background: var(--light); text-align: center; }
+        .grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 30px; }
+        .pillar-card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        .pillar-card h3 { color: var(--primary); margin-bottom: 10px; }
+
+        /* Carousel Mockup (CSS only) */
+        .testimonials { padding: 50px 0; text-align: center; overflow: hidden; }
+        .carousel-track { display: flex; gap: 20px; overflow-x: auto; padding: 20px; scroll-snap-type: x mandatory; }
+        .testim-card { min-width: 280px; background: #fff; border: 1px solid #ddd; padding: 20px; border-radius: 10px; scroll-snap-align: center; text-align: left; font-size: 0.9rem; }
+
+        /* Pricing Table */
+        .pricing { padding: 60px 0; background: #f0f2f5; }
+        .price-grid { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 30px; }
+        .p-card { background: white; border-radius: 15px; padding: 30px; width: 100%; max-width: 350px; border: 2px solid #ddd; position: relative; }
+        .p-card.featured { border-color: var(--accent); transform: scale(1.05); z-index: 2; }
+        .badge { position: absolute; top: -15px; right: 20px; background: var(--accent); color: var(--primary); padding: 5px 15px; border-radius: 20px; font-weight: bold; font-size: 0.8rem; }
+        .price-list { list-style: none; margin: 20px 0; text-align: left; font-size: 0.9rem; }
+        .price-list li { margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px; }
+        .old-p { text-decoration: line-through; color: #999; }
+        .new-p { font-size: 2.5rem; font-weight: 900; color: var(--primary); }
+
+        .btn { display: block; background: var(--secondary); color: white; text-decoration: none; padding: 18px; border-radius: 8px; font-weight: bold; text-align: center; margin-top: 20px; }
+
+        @media (min-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            .hero-grid { flex-direction: row; text-align: left; }
+            .photo-placeholder { width: 300px; height: 300px; border-radius: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">🔥 OFERTA DE LANÇAMENTO: 87% DE DESCONTO SÓ HOJE!</div>
+
+    <header>
+        <div class="container hero-grid">
+            <div class="photo-placeholder">
+                <img src="assets/Foto Daniel LP.png" alt="Prof. Daniel Garófalo">
+            </div>
+            <div>
+                <h1>O Protocolo de 180 Minutos: Como cobrir o edital de Técnico/Analista sem abrir mão do seu descanso</span></h1>
+                <p class="sub">O plano validado para quem tem rotina corrida, filhos e precisa de um método realista para conquistar a aprovação em qualquer concuso de tribunais.</p>
+                <a href="#precos" class="btn" style="background: var(--accent); color: var(--primary);">QUERO GARANTIR MINHA VAGA</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="pillars">
+        <div class="container">
+            <h2>Os 4 Pilares do Protocolo 180</h2>
+            <div class="grid-4">
+                <div class="pillar-card"><h3>Foco</h3><p>Estude o que pontua. Ignore o que o cursinho usa para encher linguiça.</p></div>
+                <div class="pillar-card"><h3>Ciclo</h3><p>Organização de blocos de 60min para máxima retenção sem cansaço.</p></div>
+                <div class="pillar-card"><h3>Revisão</h3><p>O método de revisão ativa que impede o "branco" na hora da prova.</p></div>
+                <div class="pillar-card"><h3>Poder</h3><p>Saia do zero e alcance o nível de aprovação em tempo recorde.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>Resultados Reais de quem aplica o Protocolo:</h2>
+            <div class="carousel-track">
+                <div class="testim-card img-card">
+                    <img src="assets/print_01.png" alt="Depoimento Aluno Jeane">
+                </div>
+                <div class="testim-card img-card">
+                    <img src="assets/print_02.png" alt="Depoimento Aluno Pedro">
+                </div>
+                <div class="testim-card img-card">
+                    <img src="assets/print_03.png" alt="Depoimento Aluno Cesar">
+                </div>
+                <div class="testim-card img-card">
+                    <img src="assets/print_04.png" alt="Depoimento Aluno João">
+                </div>
+                <div class="testim-card img-card">
+                    <img src="assets/print_05.png" alt="Depoimento Aluno Cecília">
+                </div>
+                <div class="testim-card img-card">
+                    <img src="assets/print_06.png" alt="Depoimento Aluno Eduardo">
+                </div>
+                <div class="testim-card img-card">
+                    <img src="assets/print_07.png" alt="Depoimento Aluno Francisco">
+                </div>
+                <div class="testim-card img-card">
+                    <img src="assets/print_08.png" alt="Depoimento Aluno Roberta">
+                </div>
+            </div>
+            <p style="font-size: 0.8rem; color: #666; margin-top: 10px;">⬅ Deslize para ver mais ➡</p>
+        </div>
+    </section>
+
+    <style>
+        .img-card { 
+            padding: 5px !important; 
+            min-width: 250px !important; 
+            max-width: 250px;
+            background: #eee;
+        }
+        .img-card img { 
+            width: 100%; 
+            height: auto; 
+            border-radius: 8px; 
+            display: block;
+        }
+    </style>
+
+    <section class="pricing" id="precos">
+        <div class="container" style="text-align: center;">
+            <h2>Escolha sua versão do Protocolo 180</h2>
+            <div class="price-grid">
+                <div class="p-card">
+                    <h3>Protocolo Básico</h3>
+                    <ul class="price-list">
+                        <li>✅ Método 180 Minutos</li>
+                        <li>✅ Ciclo de Estudos Individual</li>
+                        <li>❌ Bônus Mentoria</li>
+                    </ul>
+                    <p class="old-p">De R$ 197</p>
+                    <p class="new-p">R$ 27</p>
+                    <a href="https://pay.kiwify.com.br/TIzGxEr" class="btn" style="background: #666;">QUERO O BÁSICO</a>
+                </div>
+
+                <div class="p-card featured">
+                    <div class="badge">MAIS VENDIDO</div>
+                    <h3>Protocolo PREMIUM</h3>
+                    <ul class="price-list">
+                        <li>✅ <b>Tudo do Básico</b></li>
+                        <li>✅ GPS do Aprovado (R$ 197)</li>
+                        <li>✅ Top Assuntos que mais caem (R$ 47)</li>
+                        <li>✅ Resumos Estratégicos (R$ 97)</li>
+                        <li>✅ Acesso ao Clube de Descontos</li>
+                    </ul>
+                    <p class="old-p">De R$ 540</p>
+                    <p class="new-p">R$ 37</p>
+                    <a href="https://pay.kiwify.com.br/18iKQOS" class="btn">QUERO O PREMIUM (RECOMENDADO)</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protocolo 180 Minutos - Prof. Daniel Garófalo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0a192f;
+            --accent: #ffd700;
+            --text: #333;
+            --light: #f4f7f6;
+            --white: #ffffff;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--text); background: var(--white); }
+        
+        .container { width: 90%; max-width: 800px; margin: 0 auto; padding: 40px 0; }
+
+        /* Headline */
+        header { background: var(--primary); color: var(--white); text-align: center; padding: 60px 20px; }
+        h1 { font-size: 2.2rem; line-height: 1.2; font-weight: 800; margin-bottom: 20px; }
+        h1 span { color: var(--accent); }
+        .sub-headline { font-size: 1.1rem; opacity: 0.9; max-width: 600px; margin: 0 auto; }
+
+        /* Section Benefícios */
+        .benefits { padding: 40px 0; }
+        .benefit-item { background: var(--light); padding: 20px; border-radius: 10px; margin-bottom: 15px; border-left: 5px solid var(--primary); }
+        .benefit-item h3 { font-size: 1.1rem; margin-bottom: 5px; color: var(--primary); }
+
+        /* Oferta/Preço */
+        .offer-card { background: var(--primary); color: var(--white); padding: 40px; border-radius: 20px; text-align: center; margin: 40px 0; box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
+        .old-price { text-decoration: line-through; opacity: 0.6; font-size: 1.2rem; }
+        .new-price { font-size: 3.5rem; font-weight: 800; color: var(--accent); margin: 10px 0; }
+        .installments { display: block; margin-bottom: 20px; font-size: 1.1rem; }
+
+        /* Botão CTA */
+        .btn { display: block; background: #28a745; color: white; text-decoration: none; padding: 20px; border-radius: 10px; font-size: 1.3rem; font-weight: bold; transition: transform 0.2s; box-shadow: 0 4px 15px rgba(40, 167, 69, 0.4); }
+        .btn:hover { transform: scale(1.02); }
+
+        /* Bônus */
+        .bonus-grid { display: grid; grid-template-columns: 1fr; gap: 15px; margin-top: 20px; }
+        .bonus-box { border: 2px dashed var(--primary); padding: 15px; border-radius: 10px; }
+        .bonus-tag { background: var(--accent); color: var(--primary); font-size: 0.7rem; font-weight: bold; padding: 2px 8px; border-radius: 5px; text-transform: uppercase; }
+
+        /* FAQ */
+        .faq { background: var(--light); padding: 40px 0; }
+        details { background: white; padding: 15px; border-radius: 8px; margin-bottom: 10px; cursor: pointer; }
+        summary { font-weight: bold; color: var(--primary); }
+
+        /* Responsividade */
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8rem; }
+            .new-price { font-size: 2.8rem; }
+        }
+    </style>
+
+    <section class="bio-section">
+    <div class="container bio-grid">
+        <div class="bio-photo">
+            <img src="assets/quem.png" alt="Prof. Daniel Garófalo - Ex-Servidor Público">
+        </div>
+        <div class="bio-content">
+            <h2>Quem será seu Mentor?</h2>
+            <p>Olá! Eu sou o <strong>Daniel Garófalo</strong>, Ex-Servidor Público e aprovado mais de 6x em concursos de tribunais.</p>
+            <p>Depois de passar por essas aprovações, eu descobri que o segredo não era a quantidade de horas, mas a <strong>estratégia de execução</strong>. Hoje, minha missão é provar que você não precisa de 8h por dia para mudar de vida.</p>
+            <p>Ajudo pessoas comuns a conquistarem sua vaga em Tribunais com um plano de apenas 3 horas por dia. Se você busca estabilidade e um salário de R$ 10k+, eu tenho o caminho para você chegar lá em até 6 meses.</p>
+            
+            <a href="#precos" class="btn-bio">GARANTIR O PROTOCOLO</a>
+        </div>
+    </div>
+    </section>
+
+    <style>
+        /* Estilos Gerais da Seção */
+        .bio-section { background: #111; color: white; padding: 60px 0; }
+        
+        /* Container e Grid */
+        .bio-grid { display: flex; flex-direction: column; align-items: center; gap: 40px; text-align: left; }
+        
+        /* Estilos da Foto */
+        .bio-photo { width: 100%; max-width: 400px; border-radius: 15px; overflow: hidden; border-bottom: 5px solid #ffcc00; /* Cor amarela de destaque */ }
+        .bio-photo img { width: 100%; display: block; filter: grayscale(10%); height: auto; object-fit: cover; }
+        
+        /* Estilos do Conteúdo */
+        .bio-content { width: 100%; }
+        .bio-content h2 { font-size: 2rem; margin-bottom: 20px; color: #ffcc00; /* Cor amarela de destaque */ font-weight: 900; }
+        .bio-content p { margin-bottom: 15px; font-size: 1.1rem; line-height: 1.6; opacity: 0.9; }
+        
+        /* Estilos do Botão */
+        .btn-bio { 
+            display: inline-block; 
+            background: #44ad27; /* Cor verde de destaque */
+            color: white; 
+            padding: 18px 40px; 
+            border-radius: 50px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            margin-top: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            text-align: center;
+            width: 100%; /* Botão full-width no mobile */
+            max-width: 320px;
+        }
+
+        /* Ajustes para Desktop (Igual à Seção 1) */
+        @media (min-width: 768px) {
+            .bio-grid { flex-direction: row; align-items: flex-start; text-align: left; }
+            .bio-photo { min-width: 350px; max-width: 350px; border-radius: 20px; border-bottom: none; border-right: 5px solid #ffcc00; }
+            .bio-content { flex: 1; padding-left: 40px; }
+            .bio-content h2 { font-size: 2.8rem; }
+            .btn-bio { width: auto; } /* Botão tamanho normal no desktop */
+        }
+    </style>
+
+    <section class="faq">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 20px;">Dúvidas Frequentes</h2>
+            <details>
+                <summary>Para quem é este protocolo?</summary>
+                <p>Para quem trabalha, tem filhos e só dispõe de 2 a 4 horas por dia para estudar de forma séria.</p>
+            </details>
+            <details>
+                <summary>Já tenho cursinho, preciso disso?</summary>
+                <p>Sim. O cursinho te dá o conteúdo, o Protocolo te dá a ESTRATÉGIA de como vencer esse conteúdo no tempo que você tem.</p>
+            </details>
+            <details>
+                <summary>Como recebo o acesso?</summary>
+                <p>Imediatamente após a confirmação do pagamento no seu e-mail.</p>
+            </details>
+        </div>
+    </section>
+
+    <footer style="text-align: center; padding: 20px; font-size: 0.8rem; color: #999;">
+        © 2026 Prof. Daniel Garófalo - Todos os direitos reservados.
+    </footer>
+
+</body>
+</html>
