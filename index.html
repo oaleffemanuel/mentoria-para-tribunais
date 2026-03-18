@@ -305,23 +305,65 @@
         }
     </style>
 
-    <section class="faq">
-        <div class="container">
-            <h2 style="text-align: center; margin-bottom: 20px;">Dúvidas Frequentes</h2>
-            <details>
-                <summary>Para quem é este protocolo?</summary>
-                <p>Para quem trabalha, tem filhos e só dispõe de 2 a 4 horas por dia para estudar de forma séria.</p>
-            </details>
-            <details>
-                <summary>Já tenho cursinho, preciso disso?</summary>
-                <p>Sim. O cursinho te dá o conteúdo, o Protocolo te dá a ESTRATÉGIA de como vencer esse conteúdo no tempo que você tem.</p>
-            </details>
-            <details>
-                <summary>Como recebo o acesso?</summary>
-                <p>Imediatamente após a confirmação do pagamento no seu e-mail.</p>
-            </details>
+    <section class="faq-section">
+    <div class="container">
+        <h2>Dúvidas Frequentes</h2>
+        
+        <div class="faq-item">
+            <button class="faq-question">+ O que é o Protocolo 180?</button>
+            <div class="faq-answer">
+                <p>É um método estratégico focado em quem precisa passar em concursos de Tribunais estudando apenas 180 minutos (3 horas) por dia. Não é um curso de teoria infinita, mas um plano de execução de quem já foi aprovado 6 vezes.</p>
+            </div>
         </div>
+
+        <div class="faq-item">
+            <button class="faq-question">+ Para quem o Protocolo é indicado?</button>
+            <div class="faq-answer">
+                <p>Para quem trabalha, tem família e rotina corrida, mas não abre mão de ganhar R$ 10k+. Se você tem pouco tempo e precisa focar no que realmente pontua, o método é para você.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">+ Como recebo o acesso?</button>
+            <div class="faq-answer">
+                <p>Imediatamente após a confirmação do pagamento, você recebe um e-mail da Kiwify com seus dados de login para a nossa área de membros exclusiva.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">+ Existe garantia?</button>
+            <div class="faq-answer">
+                <p>Sim, você tem 7 dias de garantia incondicional. Sem perguntas, sem burocracia.</p>
+            </div>
+        </div>
+    </div>
     </section>
+
+    <style>
+        .faq-section { background: #000; color: white; padding: 60px 20px; font-family: sans-serif; }
+        .faq-section h2 { text-align: center; margin-bottom: 40px; font-size: 2rem; }
+        .faq-item { border-bottom: 1px solid #333; max-width: 800px; margin: 0 auto; }
+        .faq-question { 
+            width: 100%; background: none; border: none; color: white; text-align: left; 
+            padding: 20px; font-size: 1.1rem; cursor: pointer; display: flex; align-items: center;
+            transition: 0.3s;
+        }
+        .faq-question:hover { background: #111; }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; background: #0a0a0a; }
+        .faq-answer p { padding: 0 20px 20px 20px; color: #ccc; line-height: 1.6; }
+        
+        /* Classe para quando estiver aberto (via JS simples) */
+        .faq-item.active .faq-answer { max-height: 200px; }
+    </style>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const item = button.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+    </script>
 
     <footer style="text-align: center; padding: 20px; font-size: 0.8rem; color: #999;">
         © 2026 Prof. Daniel Garófalo - Todos os direitos reservados.
